@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del autor">
+    <meta name="description" content="Descripcion del proyecto">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Base Apparel Coming Soon Page</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="coming_soon">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo de la marca">
+            </div>
+            <h1>We're <span>coming soon</span></h1>
+            <p> 
+                Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+                up-to-date with announcements and our launch deals.
+            </p>
+
+            <form method="post" class="form" id="form_coming">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <img class="icon_error" src="images/icon-error.svg" alt="Icono error">
+
+                <button type="submit" id="btn_submit">
+                    <img class="btn_icon" src="images/icon-arrow.svg" alt="Icon">
+                </button>
+                <p class="error">Please provide a valid email</p>
+            </form>
+
+            <div class="modal">
+                <div class="modal_content">
+                    <img src="images/icon-check.svg" alt="Icono check">
+                    <h2>Thanks for your support</h2>
+                    <p>You have successfully signed up to our email listing. Don't forget to check your email for our launch offers and announcements.</p>
+                    <button class="btn_close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="img_container">
+            <img class="img_desktop" src="images/hero-desktop.jpg" alt="Imagen modelo">
+            <img class="img_mobile" src="images/hero-mobile.jpg" alt="Imagen modelo">
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
